@@ -196,7 +196,7 @@ void keyPressed() {
       case UP:
    
       if(frogY>0){
-      frogY-=10;
+      frogY-=5;
       }else{
       frogY=0;
       }
@@ -204,7 +204,7 @@ void keyPressed() {
       
       case DOWN:
          if(frogY<height-30){
-      frogY+=10;
+      frogY+=5;
       }else{
       frogY=height-30;
       
@@ -214,7 +214,7 @@ void keyPressed() {
       
       case RIGHT:
       if(frogX<width-30){
-      frogX+=10;
+      frogX+=5;
       }else{
       frogX=width-30;
       }
@@ -222,7 +222,7 @@ void keyPressed() {
       
       case LEFT:
       if(frogX>0){
-      frogX-=10;
+      frogX-=5;
       }else{
       frogX=0;
       }
