@@ -234,16 +234,16 @@ void keyPressed() {
     }
       
   if (key == ENTER) {
-    switch(status) {
+    switch(gameState) {
 
     case GAME_START:
-     status = GAME_PLAYING;
+     gameState = GAME_PLAYING;
       life=3;
       frogX = frogInitX;
       frogY = frogInitY;
       
     case GAME_PLAYING:
-      status = GAME_PLAYING;
+      gameState = GAME_PLAYING;
      
       break;
 
