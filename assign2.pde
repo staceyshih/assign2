@@ -232,12 +232,21 @@ void keyPressed() {
       
 
     }
-    if(key==ENTER /*still needs something*/){
-      gameState = GAME_RUN;
+      
+  if (key == ENTER) {
+    switch(status) {
+
+    case GAME_START:
+     status = GAME_PLAYING;
       life=3;
       frogX = frogInitX;
       frogY = frogInitY;
-          
-        
+      
+    case GAME_PLAYING:
+      status = GAME_PLAYING;
+     
+      break;
+
     }
+  }
 }
