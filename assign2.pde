@@ -237,13 +237,13 @@ void keyPressed() {
     switch(gameState) {
 
     case GAME_START:
-     gameState = GAME_PLAYING;
+     gameState = GAME_RUN;
       life=3;
       frogX = frogInitX;
       frogY = frogInitY;
       break;
-    case GAME_PLAYING:
-      gameState = GAME_PLAYING;
+    case GAME_RUN:
+      gameState = GAME_RUN;
      
       break;
 
