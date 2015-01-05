@@ -241,7 +241,7 @@ void keyPressed() {
       life=3;
       frogX = frogInitX;
       frogY = frogInitY;
-      
+      break;
     case GAME_PLAYING:
       gameState = GAME_PLAYING;
      
